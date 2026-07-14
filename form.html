@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <label for="fullname">Name:</label><br>
+        <input type="text" placeholder="Enter your name" id="fullname" name="fullname" required> <br>
+        
+        <!--Email-->
+        <label for="email">Email Address:</label><br>
+        <input type="email" placeholder="Enter valid mail ID" name="email" id="email" required> <br>
+        
+        <!-- Password-->
+        <label for="psw">Password:</label> <br>
+        <input type="password" placeholder="Enter Password" minlength="8" maxlength="15" name="psw" id="psw" required><br>
+        
+        <!-- number input -->
+        <label for="age">Age:</label><br>
+        <input type="number" placeholder="Enter age" id="age" name="age" min="18" max="100"> <br>
+        
+        <!-- radio button -->
+        <p>Gender:</p>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="gender">Female</label> <br>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="gender">Male</label> <br>
+        <input type="radio" id="notsay" name="gender" value="notsay">
+        <label for="gender">Rather Not Say</label> <br>
+        
+        <!-- checkbox -->
+         <p>Skills:</p>
+        <input type="checkbox" name="html" id="html" value="html">
+        <label for="html">HTML</label><br>
+        <input type="checkbox" name="css" id="css" value="css">
+        <label for="css">CSS</label><br>
+
+        <!-- dropdown -->
+        <label for="country">Country</label>
+        <select name="country" id="country">
+        <option value="india">India</option>
+        <option value="usa">USA</option>
+        <option value="australia">Australia</option>
+        </select><br>
+
+        <!-- text area -->
+         <label for="message">Message:</label>
+         <textarea name="message" id="message" placeholder="Please drop a message"></textarea><br>
+
+        <!-- file upload -->
+         <label for="resume">Upload Resume:</label>
+         <input type="file" name="resume" id="resume"><br>
+
+        <!-- date picker -->
+        <label for="dob">Date of Birth: </label>
+        <input type="date" name="dob" id="dob"><br><br>
+
+        <!--Button--> 
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+</body>
+</html>
