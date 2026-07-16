@@ -4,39 +4,116 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio[Angel Biju]</title>
+
+    
+    <meta name="description" content="Full-stack web developer specializing
+          in React and Node.js. Available for freelance projects.">
+    <meta name="keywords" content="web developer, React, JavaScript, portfolio">
+    <meta name="author" content="Doppleganger">
+ 
+    <!-- Open Graph (for Facebook, LinkedIn, WhatsApp previews) -->
+    <meta property="og:title" content=" Doppleganger | Web Developer">
+    <meta property="og:description" content="Check out my portfolio and projects!">
+    <meta property="og:image" content="https://johndoe.com/preview.jpg">
+    <meta property="og:url" content="https://johndoe.com">
+    <meta property="og:type" content="website">
+ 
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content=" Doppleganger | Web Developer">
+    <meta name="twitter:description" content="Check out my portfolio!">
+    <link rel="icon" href="../Project/Profile.png">
 </head>
 <body>
-    <nav>
-        <a href="#about">About</a>
-        <a href="#skills">Abilities</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-    </nav>
+    
     <header>
+        <nav>
+            <div class="logo">AEB</div>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Abilities</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        <button class="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">🌙</button>
+        <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">≡</button>
+        
+        
+    </nav>
+    
+    </header>
+
+    <main>
+        <section id="hero-section" >
         <h1>Hi I'm Angel Biju😊👀</h1>
         <p>I'm a passionate web developer based in Mysuru. Also a novice to cybersecurity.</p>
+        <div class="hero-button">
+            <a href="#projetcs">View My Work</a>
+            <a href="#contact">Contact Me</a>
+        </div>
+        </section>
+        <section id="about" class="about-section">
+            <h2>About Me</h2>
+            <figure class="profile=figure">
+                <img src="Profile.png" alt="Profile Picture" width="50px" height="50px">
+                <figcaption>Angle- developer in the making</figcaption>
+            </figure>
+            <p>I love building programs, moreover using my analytical skills to find better and simpler ways to connect elements</p>
+        </section>
+    <section id="skills" class="skill-section">
+        <h2>My Skills</h2>
+        <div class="skill-grid">
+            <div class="skill-item" data-level="90">HTML</div>
+            <div class="skill-item" data-level="80">CSS</div>
+            <div class="skill-item" data-level="70">Javascript</div>
+            <div class="skill-item" data-level="85">React</div>
+
+        </div>
+    </section>   
+    <section id="projects" class="project-section">
+        <h2>My Project</h2>
+        <div class="project-grid">
+            <article class="project-card" data-category="web">
+                <img src="weather.png" alt="Weather app Screenshot">
+                <h3>Weather App</h3>
+                <p>Real-time weather dashboard using OpenWeather API</p>
+                <div class="project-tags">
+                    <span>React</span>
+                    <span>API</span>
+                </div>
+                <a href="#">Live Demo</a>
+                <a href="#">GitHub</a>
+            </article>
+        </div>
+    </section> 
+    <section id="contact" class="contact-section">
+        <h2>Get in Touch</h2>
+        <form action="#" method="post" novalidate>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea name="message" id="message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+    </section>
+    </main>
+<!-- <br>
         <a href="#hire">Hire me</a>
-    </header>
 
     <section id="about">
         <h2>About me</h2>
-        <img src="Profile.png" alt="Profile Picture" width="50px" height="50px">
-        <p>I love building programs, moreover using my analytical skills to find better and simpler ways to connect elements</p>
     </section>
 
-    <section id="skills">
-        <h2>My Skills</h2>
-        <ul tyPe="square">
-            <li>HTML</li>
-            <li>PYTHON</li>
-            <li>C LANGUAGE</li>
-            <li>JAVASCRIPT</li>
-            <li>REACT</li>
-        </ul>
-    </section>
 
-    <section id="projects">
-        <h2>My Project</h2>
+
         <h4>Project 1</h4>
         <p>Description of project 1
         <a href="#view project">View Project</a></p>
@@ -48,15 +125,15 @@
         <h4>Project 3</h4>
         <p>Description of project 3
         <a href="#view project">View Project</a></p>
-    </section>
+    </section> -->
 
-    <section id="contact">
+    <!-- <section id="contact">
         <h2>Contact Me</h2>
         <p>Email:<a href="mailto:angelbiju2327@gmail.com">angelbiju2327@gmail.com</a></p>
         <p>Github: <a href="https://github.com/anglemichael">anglemichael</a></p>
         <p>Linkedin: <a href="https://linkedin.com/in/angel-biju-aa17b8386">Angel Biju</a></p>
-        </section>
-    <section id="hire">    
+        </section> -->
+    <!-- <section id="hire">    
         <h2>Hire Me</h2>
         <p>Have a project in mind?Let's talk!</p>
         <form action="">
@@ -76,11 +153,17 @@
             <button type="submit">Send Message📤</button>
 
         </form>
-    </section>
+    </section> -->
     
 
-    <footer>
-        <p>© 2026[ANGEL BIJU]. All Rights Reserved.</p>
-    </footer>
+    <footer class="site-footer">
+        <p>&copy; Angel Biju. Built with HTML & CSS </p>
+    <!-- 2026[ANGEL BIJU]. All Rights Reserved. -->
+    <nav aria-label="socialmedia links">
+    <a href="https://github.com/anglemichael" target="_blank">Github</a>
+    <a href="https://linkedin.com/in/angel-biju-aa17b8386" target="_blank">Linkedin</a>
+</nav>
+</footer>
+
 </body>
 </html>
