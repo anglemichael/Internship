@@ -1,0 +1,70 @@
+/* element selector */
+h2{
+    color: chocolate;
+}
+/* class selector */
+.hero-section{
+    color: rgb(255,255,0);
+}
+/* id selector */
+#style{
+    color: #FF0000;
+}
+/* universal selector */
+/* *{
+    background-color: beige ;
+} */
+/* *{
+    margin: 0;
+    padding: 20;
+} */
+/* group selector */
+h1,h2,h3{
+    color: chartreuse;
+}
+body{
+    background-color: bisque;
+}
+p{
+    color: darkgoldenrod;
+    font-size: 20px;
+    text-align: justify;
+    line-height: 1rem;
+    letter-spacing: 1px;
+    
+
+}
+.one:hover{
+    font-size: 20px;
+    font-family: cursive;
+    font-style: italic;
+    font-weight: lighter;
+    text-decoration: underline;
+    text-transform: uppercase;
+    
+}
+.two{
+    font-size: 1em;
+    text-decoration: overline;
+    text-transform: capitalize;
+}
+.three{
+    font-size: 1rem;
+    text-decoration: line-through;
+}
+a{
+    text-decoration: none;
+}
+a:visited{
+    color: purple;
+}
+a:active{
+    color: yellow;
+}
+input:focus{
+    background-color: yellow;
+    width: 250px;
+}
+p:first-child{
+    color: blueviolet;
+}
