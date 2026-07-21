@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            background-color: black;
+            color: white;
+            flex-grow: 1;
+            /* margin: 2px;
+            padding: 10px; */
+        }
+        body{
+            background-color: bisque;
+        }
+        .container{
+        
+        display: grid;
+        /* grid-template-columns: 300px 300px 300px; */
+        /* grid-template-columns: repeat(3,300px); */
+        grid-template-columns: 1fr 2fr 1fr; 
+        column-gap: 20px;
+        row-gap: 10px;
+        }
+        .para{
+        background-color: aqua;
+        padding: 20px;
+        }
+        /* h2{
+            background-color: black;
+            color: white;
+            flex: 2;
+        }
+        h3{
+            background-color: black;
+            color: white;
+            flex: 1;
+        } */
+        /* div{
+            background-color: yellow;
+            padding: 10px;
+            display: flex;
+            gap: 20px; */
+            /* flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-direction: row; 
+        }*/
+        /* .card{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            text-align: center;
+        } */
+
+
+        #box1{
+            /* grid-column-start: 1;
+            grid-column-end: 3; */
+            grid-column: span 3;
+        }
+        #box2{
+            grid-row: span 2;
+        }
+        #box3{
+            grid-column: span;
+        }
+    </style>
+</head>
+<body>
+     <!-- <div>
+        <h1>one</h1>
+        <h2>two</h2>
+        <h3>three</h3>
+    </div> --> 
+    <!-- <div class="card">
+        <div class="box">
+            <h2>Master 3D Design</h2>
+            <img src="3d.jpeg" alt="" width="200px" height="150px">
+            <p>Earn Global Solidworks</p>
+            <button>View More</button>
+        </div>
+        <div class="box">
+            <h2>Embedded Systems</h2>
+            <img src="embedded systems.png" alt="" width="200px">
+            <p>Earn Global Solidworks</p>
+            <button>View More</button>
+        </div>
+        <div class="box">
+            <h2>Advanced VLSI</h2>
+            <img src="vlsio.jpeg" alt="" width="200px">
+            <p>Earn Global Solidworks</p>
+            <button>View More</button>
+        </div>
+        <div class="box">
+            <h2>Software Engineering</h2>
+            <img src="software.jpg" alt="" width="200px" height="200px">
+            <p>Earn Global Solidworks</p>
+            <button>View More</button>
+        </div>  -->
+
+    <!-- </div> 
+        <div class="container">
+            <div class="para">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum deleniti quaerat, expedita aliquid impedit tempore adipisci nemo dolorem placeat. Aliquid repudiandae fugiat facere ut itaque vero voluptate odio magni qui.</p>
+            </div>
+            <div class="para">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum deleniti quaerat, expedita aliquid impedit tempore adipisci nemo dolorem placeat. Aliquid repudiandae fugiat facere ut itaque vero voluptate odio magni qui.</p>
+            </div>
+            <div class="para">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum deleniti quaerat, expedita aliquid impedit tempore adipisci nemo dolorem placeat. Aliquid repudiandae fugiat facere ut itaque vero voluptate odio magni qui.</p>
+            </div>
+            <div class="para">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum deleniti quaerat, expedita aliquid impedit tempore adipisci nemo dolorem placeat. Aliquid repudiandae fugiat facere ut itaque vero voluptate odio magni qui.</p>
+            </div>
+        </div> -->
+    <div class="parent">
+        <div class="child" id="box1">1</div>
+        <div class="child" id="box2">2</div>
+        <div class="child" id="box3">3</div>
+        <div class="child" id="box4">4</div>
+        <div class="child" id="box5">5</div>
+        <div class="child" id="box6">6</div>
+        <div class="child" id="box7">7</div>
+    </div>
+
+</body>
+</html>
