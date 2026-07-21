@@ -1,0 +1,41 @@
+/* universal selector */
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+/* root variables */
+:root{
+    --primary: #1b4f71;
+    --accent: #F18F01;
+    --text: #2C3E50;
+    --light: #F4F6F8;
+    --white: #ffffff;
+    --font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* class selector */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    background: var(--primary);
+}
+.logo{
+    font-size: 28px;
+    font-weight: bold;
+    color: var(--primary);
+}
+.hero-section{
+    background: linear-gradient(135deg, var(--primary),#2E86AB);
+    color: #f4f6f8;
+    text-align: center;
+}
+/* identity selector */
+#style{
+    color: #FF0000;
+}
+/* group selector */
+h1,h2,h3{
+    color: darkslategray;
+}
