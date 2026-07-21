@@ -131,3 +131,57 @@ section h2{
     margin-top: 50px;
     position: relative;
 }
+
+section h2::after{
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: var(--accent);
+    margin: 12px auto 0;
+    border-radius: 2px;
+}
+.hero-section h1{
+    animation: fadeinup 0.8s ease 0.2s both;
+}
+@keyframes fadeinup{
+    from{opacity: 0; transform: translateY(30px);}
+    to{opacity: 1;transform: translateY(0);}
+}
+.tagline{
+    animation: fadeinup 0.8s ease 0.2s both;
+}
+.hero-button{
+    animation: fadeinup 0.8s ease 0.2s both;
+}
+.hero-section h1{
+    animation: fadeinup 0.8s ease 0.2s both;
+}
+.contact-section{
+    max-width: 600px;
+    margin: 0 auto;
+}
+.form-group{
+    margin-bottom: 24px;
+}
+.form-group label{
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--primary);
+}
+.form-group input,.form-group textarea{
+    width: 100%;
+    padding: 14px 16px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: inherit;
+    transition: border-color 0.3s;
+    /* box-shadow: 0 0 0 3px rgba(27, 0, 0, 0.357); */
+}
+.form-group input:focus,.form-group textarea:focus{
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(27,79,114,0.15);
+}
