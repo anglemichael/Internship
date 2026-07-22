@@ -28,6 +28,20 @@
         background-color: aqua;
         padding: 20px;
         }
+        .parent{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 100px 200px 300px;
+            gap: 20px;
+        }
+        .child{
+            background-color: blue;
+            color: white;
+            font-size: 40px;
+            display: grid;
+            justify-content: center;
+            align-items: center;
+        }
         /* h2{
             background-color: black;
             color: white;
