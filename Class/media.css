@@ -1,0 +1,41 @@
+.project-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+/* tablet */
+@media(min-width:768px){
+    .project-grid{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .hero-section{
+    font-size: 2.5rem;
+    }
+}
+
+@media(min-width:1024px){
+    .project-grid{
+        grid-template-columns:repeat(3,fr) ;
+    }
+    .hero-section{
+        font-size: 3.5rem;
+    }
+}
+
+@media(min-width:1440px){
+    .project-grid{
+        grid-template-columns: auto;
+    }
+    .hero-section{
+        font-size: ;
+    }
+}
+
+
+@media(min-width:1440px){
+    .project-grid{
+        grid-template-columns: repeat();
+    }
+    .hero-section{
+        font-size: ;
+    }
+}
