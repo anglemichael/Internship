@@ -13,7 +13,6 @@ const heroTitle =document.querySelector('.hero-section h1');
 if (heroTitle){
     heroTitle.textContent = `${getGreeting()}, I'm Angel 👋`;
 }
-// //Dark Mode
 // let themeBtn=document.querySelector(".theme-toggle")
 // function updateThemeIcon(theme){
 //     themeBtn.textContent=theme==="dark"?"🌙":"☀️"
@@ -32,6 +31,8 @@ if (heroTitle){
 
 // })
 // }
+// // //Dark Mode
+
 let themeBtn = document.querySelector(".theme-toggle");
 function updateThemeIcon(theme) {
     themeBtn.textContent = theme === "dark" ? "🌙" : "☀️";
@@ -51,10 +52,18 @@ if (themeBtn) {
 
 let menuToggle=document.querySelector(".menu-toggle");
 let navLinks=document.querySelector("nav-link");
-menuToggle.addEventListener('click',()=>{
+if (menuToggle&&navLinks){
+    menuToggle.addEventListener("click",()=>{
     navLinks.classList.toggle("open");
-    menuToggle.setAttribute('aria-expanded',navLinks.classList.contains('open'));
-})
+    menuToggle.setAttribute('aria-expanded',navLinks.classList.contains("open"));
+});
+window.addEventListener("resize", () => {
+        if (window.innerWidth > 768) {
+            navLinks.classList.remove("open");
+            menuToggle.setAttribute("aria-expanded", "false");
+        }
+    });
+}
 let header=document.querySelector(".site-header")
 window.addEventListener("scroll",()=>{
     if(window.scrollY>50){
@@ -65,19 +74,112 @@ window.addEventListener("scroll",()=>{
 
     }
 })
-let section=documetiom.querySelectorAll("section[id]");
-let navitems=document.querySelectorAll('.navlink a')
+let sections=documetiom.querySelectorAll("section[id]");
+let navItems=document.querySelectorAll(".navlink a");
 window.addElementListener("scroll",()=>{
     let current="";
-    section.forEach(section=>{
+    sections.forEach(section=>{
         if(window.scrollY>=section.offsetTop-100){
-            current-section.getAttribute('id');
+            current= section.id;
         }
     })
-});
 navitems.forEach(link=>{
     link.classList.remover("active");
     if(link.getAttribute("href")===`#${current}`){
         link.classList.add("active");
+    }
+});
+});
+
+//dynamic year
+
+let footyear=document.querySelector(".footer-year");
+if(footyear){
+    footyear.textContent=new Date().getFullYear();
+
+}
+
+//project filter
+
+let projects=[{id:1,name:"weather App", category:"web", tech:["React", "API"]},
+{id:2,name:"Todo App",category:"web",tech:["Javascript"]},
+{id:3, name:"Portfolio", category:"design",tech:["HTML,CSS"]},
+{id:4, name:"calculator",category:"web",tech:["javascript"]}]
+ 
+function renderProjects(filter="all"){
+let grid=document.querySelector(".projects-grid");
+let filtered=filter==="all"?projects
+:projects.filter(p=>p.category===filter);
+grid.innerHTML=filtered.map(project=>`
+    <article class="project-card">
+        <div class="project-card-body">
+            <h3>${project.name}</h3>
+            <div class="project-tags">${project.tech.map(t=>`<span class="tag1">${t}</span>`).join("")}</div>
+            <a href="#" class="btn btn-primary">view Project</a>          
+        </div>
+    </article>
+`).join("");
+}
+//filter button
+ 
+document.querySelectorAll(".filter.btn").forEach(btn=>{
+    btn.addEventListener('click',()=>{
+        document.querySelectorAll(".filter.btn").forEach(b=>b.classList.remove('active'));
+        btn.classList.add("active");
+        renderProjects(btn.dataset.filter);
+    });
+});
+ 
+renderProjects();
+
+let form=document.querySelector("#contact");
+function showError(input,message){
+let group=input.closest('.form-group');
+let existing=group.querySelector(".error-msg");
+if(!existing){
+    let errEL=document.createElement('span');
+    errEL.className="error-msg";
+    errEL.textContent=message;
+    group.appendChild(errEL);
+}
+input.classList.add("error")
+}
+function clearErrors(){
+    document.querySelectorAll(".error-msg").forEach(e=>e.remove());
+    document.querySelectorAll(".error").forEach(e=>e.classList.remove('error'));
+}
+form.addEventListener("submit",async(e)=>{
+    e.preventDefault();
+    clearErrors();
+    let name=form.querySelector("#name");
+    let email=form.querySelector("#email")
+    let message=form.querySelector("#message")
+ 
+    let valid=true;
+ 
+    if(!name.value.trim()){
+        showError(name,"Name is required")
+        valid=false;
+    }
+    if(!email.value.includes("@")){
+        showError(email,"Enter a valid email");
+        valid=false
+    }
+    if(message.value.trim().length<10){
+        showError(message,"Message must be at least 10 characters")
+        valid=false;
+    }
+    if(valid){
+        let btn=form.querySelector('button[type="submit"]');
+        btn.textContent="sending...";
+        btn.disabled=true;
+ 
+        await new Promise(resolve=>setTimeout(resolve,1500));
+        btn.textContent="✅ Message Sent";
+        form.reset();
+        setTimeout(()=>{
+            btn.textContent="Send Message";
+            btn.disabled=false
+        },3000);
     }
 });
