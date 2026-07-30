@@ -22,7 +22,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content=" Doppleganger | Web Developer">
     <meta name="twitter:description" content="Check out my portfolio!">
-    <link rel="icon" href="../Project/Profile.png">
+    <link rel="icon" href="Profile.jpg">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -41,18 +41,18 @@
         </nav>
     </header>
     <main>
-        <section class="hero-section" >
+        <section class="hero-section" id="hero">
         <h1>Hi I'm <span class="highlight"> Angel😊👀</span></h1>
-        <p>I'm a passionate web developer based in Mysuru. Also a novice to cybersecurity.</p>
+        <p class="tagline">I'm a passionate web developer based in Mysuru. Also a novice to cybersecurity.</p>
         <div class="hero-button">
-            <a href="#projetcs" class="btn btn-primary">View My Work</a>
+            <a href="#projects" class="btn btn-primary">View My Work</a>
             <a href="#contact" class="btn btn-secondary">Contact Me</a>
         </div>
         </section>
-        <section id="about" class="about-section">
+        <section id="About" class="about-section">
             <h2>About Me</h2>
-            <figure class="profile=figure">
-                <img src="Profile.png" alt="Profile Picture" width="50px" height="50px">
+            <figure class="profile-figure">
+                <img src="Profile.jpg" alt="Profile Picture">
                 <figcaption>Angel - developer in the making</figcaption>
             </figure>
             <p>I love building programs, moreover using my analytical skills to find better and simpler ways to connect elements</p>
@@ -67,7 +67,7 @@
 
         </div>
     </section>   
-    <section id="projects" class="project-section">
+    <section id="Projects" class="project-section">
         <h2>My Project</h2>
         <div class="project-grid">
             <article class="project-card" data-category="web">
@@ -100,85 +100,46 @@
                     <span class="tag">React</span>
                     <span class="tag">API</span>
                 </div>
-                <a href="#">Live Demo</a>s
+                <a href="#">Live Demo</a>
                 <a href="#">GitHub</a>
             </article>                        
         </div>
     </section> 
     <section id="contact" class="contact-section">
         <h2>Get in Touch</h2>
-        <form id="contact" action="#" method="post" novalidate>
+        <form id="contact-form" action="#" method="post" novalidate>
             <div class="form-group">
                 <label for="name">Name</label>
-                <input type="text" id="name" name="name" required>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
             </div>
             <div class="form-group">
                 <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
             </div>
             <div class="form-group">
                 <label for="message">Message</label>
-                <textarea name="message" id="message" required></textarea>
+                <textarea name="message" id="message" placeholder="Enter message" required></textarea>
             </div>
             <button type="submit" class="btn btn-primary">Send Message</button>
         </form>
     </section>
     </main>
-<!-- <br>
-        <a href="#hire">Hire me</a>
-
-    <section id="about">
-        <h2>About me</h2>
-    </section>
 
 
-
-        <h4>Project 1</h4>
-        <p>Description of project 1
-        <a href="#view project">View Project</a></p>
-
-        <h4>Project 2</h4>
-        <p>Description of project 2
-        <a href="#view project">View Project</a></p>
-
-        <h4>Project 3</h4>
-        <p>Description of project 3
-        <a href="#view project">View Project</a></p>
-    </section> -->
-
-    <section id="contact">
+    <!-- <section id="contact">
         <h2>Contact Me</h2>
         <p>Email:<a href="mailto:angelbiju2327@gmail.com">angelbiju2327@gmail.com</a></p>
         <p>Github: <a href="https://github.com/anglemichael">anglemichael</a></p>
         <p>Linkedin: <a href="https://linkedin.com/in/angel-biju-aa17b8386">Angel Biju</a></p>
-        </section>
-    <!-- <section id="hire">    
-        <h2>Hire Me</h2>
-        <p>Have a project in mind?Let's talk!</p>
-        <form action="">
-            <label for="name">Your name</label>
-            <input type="text" name="name" id="name" placeholder="Enter your name" required><br>
-            <label for="mail">Your email</label>
-            <input type="email" name="mail" id="mail" placeholder="Enter your email" required><br>
-            <label for="subject">Subject</label>
-            <select name="subject" id="subject">
-                <option value="--select a value--">--Select an option--</option>
-                <option value="hire">I want to hire you</option>
-                <option value="collab">I want to collaborate</option>
-                <option value="other">Other</option><br>                
-            </select><br>
-            <label for="msg">Message</label>
-            <textarea name="msg" id="msg" placeholder="Feedback/Message"></textarea><br>
-            <button type="submit">Send Message📤</button>
+        </section> -->
 
-        </form>
-    </section> -->
     
 
     <footer class="site-footer">
         <p>&copy; <span class="footer-year"></span>Angel Biju. Built with HTML & CSS </p>
     <!-- 2026[ANGEL BIJU]. All Rights Reserved. -->
     <nav aria-label="socialmedia links">
+    <a href="mailto:angelbiju2327@gmail.com">Email</a>
     <a href="https://github.com/anglemichael" target="_blank">Github</a>
     <a href="https://linkedin.com/in/angel-biju-aa17b8386" target="_blank">Linkedin</a>
 </nav>
