@@ -234,6 +234,10 @@ section h2::after{
 }
 }
 
+.about-section{
+    justify-content: center;
+}
+
 body,
 .site-header,
 .hero-section,
