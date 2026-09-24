@@ -4,10 +4,10 @@
     padding: 0;
 }
 :root{
-    --primary:#1B4F72;
-    --accent:#F18F01;
+    --primary:#A9501C;
+    --accent:#f8ebd9;
     --text:#2C3E50;
-    --light:#F4F6F8;
+    --light:#EDE490;
     --white:#FFFFFF;
     --font-main:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -15,7 +15,7 @@ body{
     font-family:var(--font-main);
     color:var(--text);
     line-height:1.6;
-    background: #FFFFFF;
+    background: #ebddc5;
 }
 header{
     position:sticky;
@@ -27,7 +27,7 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 20px 5%;
-    background:var(--primary);
+    background: #852736;
 }
 .logo{
     font-size: 28px;
@@ -53,7 +53,7 @@ header{
     color:var(--accent);
 }
 .hero-section{
-    background:linear-gradient(135deg, var(--primary),#2E86AB);
+    background:linear-gradient(150deg, #632024,#b59473);
     color: #F4F6F8;
     text-align: center;
 }
@@ -69,7 +69,7 @@ header{
     text-align: center;
 }
 .skill-item{
-    background-color: var(--light);
+    background-color: #E8D1a7;
     border: 2px solid var(--primary);
     border-radius: 12px;
     padding: 30px 20px;
@@ -90,7 +90,7 @@ header{
     text-align: center;
 }
 .project-card{
-    background-color: var(--primary);
+    background-color:var(--primary);
     padding: 12px;
     border-radius: 16px;
     color: white;
@@ -119,7 +119,7 @@ header{
     font-weight: 600px;
     cursor: pointer;
     border: 2px solid transparent;
-    background-color: var(--accent);
+    background-color: #6b6f4e;
     color: var(--white);
 }
 .btn:hover{
@@ -129,7 +129,7 @@ header{
 }
 .btn-primary{
     background-color: var(--accent);
-    color: var(--white);
+    color: #852736;
 }
 .btn-primary:hover{
     background-color: transparent;
@@ -197,7 +197,7 @@ section h2::after{
     box-shadow: 0 0 0 3px rgba(27,79,114,0.15);
 }
 .site-footer{
-    background-color: var(--primary);
+    background-color: #632024;
     color: rgba(255, 255, 255, 0.8);
     text-align: center;
     padding: 40px 5%;
@@ -251,7 +251,7 @@ a{
     transition: all 0.3s ease;
 }
 body[data-theme="dark"]{
-    background-color: black;
+    background-color: #0c1519;
     color: white;
 }
 body[data-theme="dark"].site-header,
@@ -263,7 +263,7 @@ body[data-theme="dark"].nav-link a{
 }
 body[data-theme="dark"].nav-link a:hover,
 body[data-theme="dark"].nav-link a:active{
-    color: #F18F01;
+    color: #2c1911;
 }
 body[data-theme="dark"].logo{
     color: white;
@@ -272,10 +272,10 @@ body[data-theme="dark"].hero-section{
     background: linear-gradient(135deg #111827, #1f2937);
 }
 body[data-theme="dark"].highlight{
-    color: orange;
+    color: #2c1911;
 }
  body[data-theme="dark"].highlight{
-        color:orange;
+        color:#2c1911;
     }
  
 body[data-theme="dark"] .about-section {
@@ -289,7 +289,7 @@ body[data-theme="dark"] .skill-section {
 body[data-theme="dark"] .skill-item {
     background: #242424;
     color: #ffffff;
-    border-color: #F18F01;
+    border-color: #2c1911;
 }
  
 body[data-theme="dark"] .projects-section {
@@ -308,7 +308,7 @@ body[data-theme="dark"] .project-card p {
 }
  
 body[data-theme="dark"] .tag {
-    background: #F18F01;
+    background: #2c1911;
     color: #ffffff;
 }
  
@@ -333,12 +333,12 @@ body[data-theme="dark"] label {
 }
  
 body[data-theme="dark"] .btn-primary {
-    background: #F18F01;
+    background: #2c1911;
     color: #ffffff;
 }
  
 body[data-theme="dark"] .btn-secondary {
-    background: #F18F01;
+    background: #2c1911;
     color: #ffffff;
 }
  
@@ -361,7 +361,7 @@ body[data-theme="dark"] .site-footer a {
 }
  
 body[data-theme="dark"] .site-footer a:hover {
-    color: #F18F01;
+    color: #2c1911;
 }
  
 body[data-theme="dark"] .theme-toggle {
